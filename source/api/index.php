@@ -4,7 +4,9 @@ require_once __DIR__.'/loader.php';
 
 $routes = array_values(array_filter(explode('/', $_SERVER['REQUEST_URI'])));
 $path =  $routes[1]; 
+$id = $routes[2];
 
+//var_dump($routes);
 
 // 
 // Database Connection
@@ -23,7 +25,12 @@ switch ($path) {
         $view = new ItemView($model);
         $controller = new ItemController($model);
 
-        $controller->getAll();
+        if (!empty($id)) {
+           $controller->getItemById($id);
+        } else {
+            $controller->getAll();
+        }
+        
         echo $view->output();
         break;
     

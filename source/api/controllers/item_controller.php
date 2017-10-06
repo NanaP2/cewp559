@@ -11,4 +11,8 @@ class ItemController
     public function getAll(){
         $this->model->getItems();
     }
+
+    public function getItemById($id){
+    	$this->model->getById($id);
+    }
 }

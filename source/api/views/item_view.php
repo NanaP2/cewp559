@@ -8,6 +8,7 @@ class ItemView
         $this->model = $model;
     }
 	
+	//recieves the private data
     public function output(){
         $data = $this->model->_data;
          
