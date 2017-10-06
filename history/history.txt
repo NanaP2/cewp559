@@ -1,0 +1,20 @@
+    1  ssh-keygen -t rsa -b 4096 -C "elena.pirinchieva@yahoo.com"
+    2  ls
+    3  ls-al
+    4  ls -al
+    5  ~
+    6  ls -al ~/.ssh
+    7  cat ~/.ssh/id_rsa.pub 
+    8  clear
+    9  cd
+   10  pwd
+   11  cd Desktop/
+   12  mkdir cewp
+   13  cd cewp/
+   14  git clone git@github.com:majidfn/CEWP-559-fall-2017.git
+   15  ls -al
+   16  cd CEWP-559-fall-2017/
+   17  docker-compose build
+   18  docker-compose up -d
+   19  hystory > ~/Desktop/history.txt
+   20  history > ~/Desktop/history.txt

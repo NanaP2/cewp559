@@ -1,0 +1,93 @@
+https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-mac -> paste: ssh-keygen -t rsa -b 4096 -C "elena.pirinchieva@yahoo.com"
+
+https://github.com/majidfn/CEWP-559-fall-2017 -> clone or download > use ssh > copy > paste into git (see below)
+
+https://github.com/settings/keys -> New ssh key > paste in the result of cat
+
+
++----[SHA256]-----+
+
+e_pirinc@CCE-FB133-09W MINGW64 /
+$ ls
+bin/  dev/  git-bash.exe*  LICENSE.txt  proc/            tmp/
+cmd/  etc/  git-cmd.exe*   mingw64/     README.portable  usr/
+
+e_pirinc@CCE-FB133-09W MINGW64 /
+$ ls-al
+bash: ls-al: command not found
+
+e_pirinc@CCE-FB133-09W MINGW64 /
+$ ls -al
+total 468
+drwxr-xr-x 1 e_pirinc 1049089      0 Sep 21 18:51 ./
+drwxr-xr-x 1 e_pirinc 1049089      0 Sep 21 18:51 ../
+drwxr-xr-x 1 e_pirinc 1049089      0 Sep 21 18:51 bin/
+drwxr-xr-x 1 e_pirinc 1049089      0 Sep 21 18:50 cmd/
+drwxr-xr-x 1 e_pirinc 1049089      0 Sep 21 18:51 dev/
+drwxr-xr-x 1 e_pirinc 1049089      0 Sep 21 18:51 etc/
+-rwxr-xr-x 1 e_pirinc 1049089 146064 Aug 10 15:03 git-bash.exe*
+-rwxr-xr-x 1 e_pirinc 1049089 145040 Aug 10 15:03 git-cmd.exe*
+-rw-r--r-- 1 e_pirinc 1049089  18765 Aug 10 15:25 LICENSE.txt
+drwxr-xr-x 1 e_pirinc 1049089      0 Sep 21 18:50 mingw64/
+dr-xr-xr-x 9 e_pirinc 1049089      0 Sep 21 19:17 proc/
+-rw-r--r-- 1 e_pirinc 1049089   3743 Feb 25  2017 README.portable
+drwxr-xr-x 1 e_pirinc 1049089      0 Sep 21 19:09 tmp/
+drwxr-xr-x 1 e_pirinc 1049089      0 Sep 21 18:51 usr/
+
+e_pirinc@CCE-FB133-09W MINGW64 /
+$ ~
+bash: /c/Users/e_pirinc: Is a directory
+
+e_pirinc@CCE-FB133-09W MINGW64 /
+$ ls -al ~/.ssh
+total 16
+drwxr-xr-x 1 e_pirinc 1049089    0 Sep 21 19:15 ./
+drwxr-xr-x 1 e_pirinc 1049089    0 Sep 21 19:15 ../
+-rw-r--r-- 1 e_pirinc 1049089 3243 Sep 21 19:15 id_rsa
+-rw-r--r-- 1 e_pirinc 1049089  753 Sep 21 19:15 id_rsa.pub
+
+e_pirinc@CCE-FB133-09W MINGW64 /
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDSoMnh5m3ywFHJwp6n9ofBWHHXZEwbHrfeirr01v9FCEfvMwiFnV3DMacD1lr+yPi8q4r9+L6CAzuoD69CZ5ZS23nsqfFLvuhdzS4Y0h8adKpI9iEEzP181mZ+0EZVad/KT1pp8rfeODTiS+hBUWgrx52R77OEEYTctGcHPSdnv5uJ59xAIjx/1kjrlki1C2q1xAChItEYQK0b12zcwJANVRuqOjq1RbjTPctAwuxJarLI66WAL6S18vI83gyzcel9TWgYFDlwmujp2g/l5WezFPDpPWKGWLiYloyJ6rPRJAuk/bPLyWvOAdpn9KKkB6pr/E/aS/mWfHvIERIhq5l98qmfcq/A1fOdUDXoHyvFt7N6cpEZvByWzEO+HrOCF70RNUhPYrJ31MYycA/yA0QybsqhibVN9/bClYOJA99YPYGd4ALrGkpgAeh9eBDmtHYQ/8qdwfVPuZDXgj/5oLqnrj3Eai8nLqBz8QAEdrjb7sQPSpGX99CluOMs3KtNot4W8/7sl7V2oLdwDBk1k6I8IyS7wZa8Zow3hPHkXG2y+54z8CyErI0x5YT+Ryj0Bdx52N0yg+G3SlDsu4QTEuoeKefGbPXnJS6bbTwuDViK6FSQHluNgcmjtadEOSQ+oD0L5THqYJxYmwOqLbNNvZjyZNuwrIJDM02j7DRTvoLc6Q== elena.pirinchieva@yahoo.com
+
+e_pirinc@CCE-FB133-09W MINGW64 /
+$ clear
+
+e_pirinc@CCE-FB133-09W MINGW64 /
+$ cd
+
+e_pirinc@CCE-FB133-09W MINGW64 ~
+$ pwd
+/c/Users/e_pirinc
+
+e_pirinc@CCE-FB133-09W MINGW64 ~
+$ cd Desktop/
+
+e_pirinc@CCE-FB133-09W MINGW64 ~/Desktop
+$ mkdir cewp
+
+e_pirinc@CCE-FB133-09W MINGW64 ~/Desktop
+$ cd cewp/
+
+e_pirinc@CCE-FB133-09W MINGW64 ~/Desktop/cewp
+$ git clone git@github.com:majidfn/CEWP-559-fall-2017.git
+Cloning into 'CEWP-559-fall-2017'...
+The authenticity of host 'github.com (192.30.253.113)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.253.113' (RSA) to the list of known hosts.
+remote: Counting objects: 54, done.
+remote: Compressing objects: 100% (30/30), done.
+remote: Total 54 (delta 11), reused 54 (delta 11), pack-reused 0
+Receiving objects: 100% (54/54), 373.83 KiB | 435.00 KiB/s, done.
+Resolving deltas: 100% (11/11), done.
+
+e_pirinc@CCE-FB133-09W MINGW64 ~/Desktop/cewp
+$ ls -al
+total 4
+drwxr-xr-x 1 e_pirinc 1049089 0 Sep 21 19:32 ./
+drwxr-xr-x 1 e_pirinc 1049089 0 Sep 21 19:31 ../
+drwxr-xr-x 1 e_pirinc 1049089 0 Sep 21 19:32 CEWP-559-fall-2017/
+
+e_pirinc@CCE-FB133-09W MINGW64 ~/Desktop/cewp
+$ cd CEWP-559-fall-2017/
