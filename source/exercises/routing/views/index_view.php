@@ -1,6 +1,6 @@
 <?php
 
-class AboutView
+class IndexView
 {
     private $model;
 
@@ -14,5 +14,6 @@ class AboutView
     	$description = $this->model->description;
 
     	require_once __DIR__ . '/../templates/template.php';
+
     }
 }
